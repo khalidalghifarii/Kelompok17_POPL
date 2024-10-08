@@ -1,20 +1,10 @@
-# Menggunakan image Node.js versi LTS sebagai base image
-FROM node:18
+# Menggunakan image Nginx sebagai base image
+FROM nginx:alpine
 
-# Menentukan direktori kerja di dalam container
-WORKDIR /app
+# Menyalin file website (HTML, CSS, dan JavaScript) ke direktori Nginx
+COPY . /usr/share/nginx/html
 
-# Menyalin file package.json dan package-lock.json ke container
-COPY package.json package-lock.json ./
+# Expose port 80 (Nginx default)
+EXPOSE 80
 
-# Install dependencies
-RUN npm install
-
-# Menyalin seluruh kode project ke container
-COPY . .
-
-# Expose port yang digunakan oleh aplikasi
-EXPOSE 3000
-
-# Menjalankan aplikasi
-CMD ["npm", "start"]
+# Tidak perlu menjalankan perintah CMD karena Nginx secara otomatis akan berjalan
