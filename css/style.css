@@ -601,11 +601,11 @@
      padding-bottom:28px;
 }
 /** end blog **/
-/** Our Client **/
- .Client {
+/** Our Chef **/
+ .Chef {
      padding-top:90px;
 }
- .Client .title h2 {
+ .Chef .title h2 {
      font-size: 45px;
      font-weight: 500;
      line-height: 40px;
@@ -613,30 +613,31 @@
      padding: 20px 0px;
      padding-bottom: 0px;
 }
- .Client .Client_box {
+ .Chef .Chef_box {
      background: #212020;
      border-radius: 20px;
      text-align: center;
      padding: 65px 50px;
 }
- .Client .Client_box h3 {
+ .Chef .Chef_box h3 {
      color: #fff;
      font-size: 30px;
      line-height: 28px;
      padding: 25px 0px;
      padding-top: 32px;
 }
- .Client .Client_box p {
+ .Chef .Chef_box p {
      color: #fff;
      font-size: 17px;
      line-height:28px;
      font-weight: 400;
+     text-align: justify;
 }
- .Client .Client_box i {
+ .Chef .Chef_box i {
      padding-top: 20px;
      display: inline-block;
 }
-/** end Our Client **/
+/** end Our Chef **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
      background: #d8b00f;
