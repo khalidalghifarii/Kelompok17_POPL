@@ -516,6 +516,7 @@
      line-height: 28px;
      padding: 30px 0px;
      font-weight: 400;
+     text-align: justify;
 }
  .about .about_box a {
      color: #fff;
@@ -599,6 +600,7 @@
      line-height: 28px;
      padding: 0px 20px;
      padding-bottom:28px;
+     text-align: justify;
 }
 /** end blog **/
 /** Our Chef **/
@@ -691,6 +693,8 @@
      font-size: 18px;
 }
  .clickable-box {
+     display: flex;
+     align-items: center;
      border: 1px solid #ccc;
      padding: 20px;
      margin: 10px 0;
@@ -698,15 +702,17 @@
      background-color: #f9f9f9;
      cursor: pointer;
      transition: background-color 0.3s ease;
-}
-    
- .clickable-box:hover {
-     background-color: #eaeaea;
-}
-
+ }
+ .clickable-box i {
+     margin-right: 10px;
+     font-size: 20px;
+ }
  .clickable-box p {
      margin: 0;
      font-size: 16px;
+}
+ .clickable-box:hover {
+     background-color: #eaeaea;
 }
  .send:hover {
      background: #000;
@@ -781,6 +787,7 @@
 }
  .footer .img-box figure img {
     width: 100%;
+    border-radius: 5px;
 }
  .copyright {
     background: #fff;
