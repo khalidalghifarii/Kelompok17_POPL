@@ -5,6 +5,7 @@ FROM nginx:alpine
 COPY . /usr/share/nginx/html
 
 # Expose port 80 (Nginx default)
+ENV PORT 80
 EXPOSE 80
 
 # Tidak perlu menjalankan perintah CMD karena Nginx secara otomatis akan berjalan
