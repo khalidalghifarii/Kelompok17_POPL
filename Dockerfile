@@ -1,8 +1,10 @@
-# Menggunakan image Nginx sebagai base image
 FROM nginx:alpine
 
-# Menyalin semua file dan folder ke direktori Nginx
-COPY . /usr/share/nginx/html
+COPY *.html /usr/share/nginx/html/
+COPY *.css /usr/share/nginx/html/
+COPY *.js /usr/share/nginx/html/
 
-# Expose port 80 (default untuk Nginx)
+ENV PORT 80
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
